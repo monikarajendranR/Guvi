@@ -1,0 +1,30 @@
+usage: airodump-ng <options> <interface>[,<interface>,...]
+
+Options:
+    --ivs                 : Save only captured IVs
+    --gpsd                : Use GPSd
+    --write      <prefix> : Dump file prefix
+    -w                    : same as --write
+    --beacons             : Record all beacons in dump file
+    --update       <secs> : Display update delay in seconds
+    --showack             : Prints ack/cts/rts statistics
+    -h                    : Hides known stations for --showack
+    -f            <msecs> : Time in ms between hopping channels
+    --berlin       <secs> : Time before removing the AP/client
+                            from the screen when no more packets
+                            are received (Default: 120 seconds)
+    -r             <file> : Read packets from that file
+    -x            <msecs> : Active Scanning Simulation
+    --manufacturer        : Display manufacturer from IEEE OUI list
+    --uptime              : Display AP Uptime from Beacon Timestamp
+    --wps                 : Display WPS information (if any)
+    --output-format
+                <formats> : Output format. Possible values:
+                            pcap, ivs, csv, gps, kismet, netxml, logcsv
+                            Short format "-o"
+                            The option can be specified multiple times.  In this case, each file format
+                            specified will be output.  Only ivs or pcap can be used, not both.  
+    --ignore-negative-one : Removes the message that says
+                            fixed channel <interface>: -1
+    --write-interval
+                <seconds> : Output file(s) write interval in seconds
